@@ -23,8 +23,7 @@ public class DemoProjectApplicationTests {
 	@Test
 	public void contextLoads() {
 		assertThat(controller).isNotNull();
-	    assertThat(this.restTemplate.getForObject("http://localhost:" + 8080 + "/",
-	                String.class)).contains("Welcome back");
+	   
 	}
 
 }
