@@ -26,12 +26,12 @@ public class DemoProjectApplicationTests {
 	   
 	}
 	
-	@Test
+	/*@Test
 	public void contextLoads1() {
 		assertThat(this.restTemplate.getForObject("http://localhost:" + 8080 + "/",
                 String.class)).contains("Welcome back");
 	   
-	}
+	}*/
 
 }
 
