@@ -1,11 +1,10 @@
 language: java
+sudo: true
+dist: trusty
 jdk: oraclejdk8
- 
-script:
-- ./mvnw clean install -B
-
-cache:
-
-  directories:
-
-  - $HOME/.m2
+addons:
+  apt:
+    packages:
+      - oracle-java9-installer
+before_install:
+  - chmod +x mvnw
