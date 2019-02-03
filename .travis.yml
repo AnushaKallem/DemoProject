@@ -8,6 +8,5 @@ addons:
       - oracle-java9-installer
 before_install:
   - chmod +x mvnw
-  - cd java
 script:
   - junit contextLoads  
