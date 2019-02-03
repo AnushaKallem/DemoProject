@@ -8,7 +8,3 @@ addons:
       - oracle-java9-installer
 before_install:
   - chmod +x mvnw
-  
-script : 
-  - cd C:\Tools\MicroServices\MS-WS\DemoProject\target
-  - java -jar DemoProject-0.0.1-SNAPSHOT.jar com.example.demo.DemoProjectApplication
