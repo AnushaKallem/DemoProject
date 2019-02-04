@@ -12,7 +12,7 @@ deploy:
   - provider: s3
     access_key_id: AKIAJ3JHITYPJGP3FWKA
     secret_access_key: 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
-    local_dir: /home/travis/build/jonashackt/spring-boot-vuejs/backend/target
+    local_dir: /home/travis/build/AnushaKallem/DemoProject/target
     skip_cleanup: true
     on: &1
       repo: AnushaKallem/DemoProject
