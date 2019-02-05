@@ -8,7 +8,3 @@ before_install:
 script:
   - cd /home/travis/build/AnushaKallem/DemoProject/target
   - java -jar DemoProject-0.0.1-SNAPSHOT.jar com.example.demo.DemoProjectApplication
-	
-cache:
-  directories:
-    - node_modules
