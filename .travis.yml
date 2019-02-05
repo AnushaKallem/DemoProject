@@ -7,25 +7,3 @@ before_install:
 cache:
   directories:
     - node_modules
-
-deploy:
-  - provider: s3
-    access_key_id: AKIAJ3JHITYPJGP3FWKA
-    secret_access_key: 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
-    local_dir: /home/travis/build/AnushaKallem/DemoProject/target
-    skip_cleanup: true
-    on: &1
-      repo: AnushaKallem/DemoProject
-    bucket: spring-boot-vuejs-bucket1
-    region: ap-south-1
-  - provider: codedeploy
-    access_key_id: AKIAJT46XQO7M7MXDQBQ
-    secret_access_key: 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
-    bucket: spring-boot-vuejs-bucket1
-    key: backend-0.0.1-SNAPSHOT.jar
-    bundle_type: zip
-    application: DemoProject
-    deployment_group: spring-boot-apps
-    region: ap-south-1
-    on: *1
-    wait-until-deployed: true
