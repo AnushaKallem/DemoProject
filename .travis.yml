@@ -4,25 +4,3 @@ dist: trusty
 jdk: oraclejdk8
 before_install:
   - chmod +x mvnw
-
-deploy:
-  - provider: s3
-    access_key_id:AKIAI64S3ULE3HK4BXVA
-    secret_access_key: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
-    local_dir: /home/travis/build/AnushaKallem/DemoProject/target
-    skip_cleanup: true
-    on: &1
-      repo: AnushaKallem/DemoProject
-    bucket: spring-boot-vuejs-bucket12
-    region: ap-south-1
-  - provider: codedeploy
-    access_key_id: AKIAIOTMSTPXHKN7UMXA
-    secret_access_key:43uI9y+ArLX9ztAMAPaSXdnH69S0ydR87BRIZa6v6Pw3uyT 
-    bucket: spring-boot-vuejs-bucket12
-    key: backend-0.0.1-SNAPSHOT.jar
-    bundle_type: zip
-    application: DemoProject
-    deployment_group: spring-boot-apps
-    region: ap-south-1
-    on: *1
-    wait-until-deployed: true
