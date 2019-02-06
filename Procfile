@@ -1,1 +1,1 @@
-web java -Dserver.port=8080 -Dspring.profiles.active=heroku $JAVA_OPTS -jar target/DemoProject-0.0.1-SNAPSHOT.jar
+web java -jar target/DemoProject-0.0.1-SNAPSHOT.jar
