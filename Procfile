@@ -1,1 +1,1 @@
-web: java $JAVA_OPTS -Dserver.port=8088 -jar target/*.jar -Dspring.profiles.active=prod
+web: java -jar target/DemoProject-0.0.1-SNAPSHOT.jar -Dserver.port=8088 -jar target/*.jar -Dspring.profiles.active=prod
