@@ -4,3 +4,8 @@ dist: trusty
 jdk: oraclejdk8
 before_install:
   - chmod +x mvnw
+deploy:
+ provider: heroku
+ api-key: 
+  secure: 84e9b9bb-e4ed-4e41-ac49-b795ac81554c
+ app: demoprojectibm
